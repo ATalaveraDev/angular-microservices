@@ -14,6 +14,7 @@
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
+    "@angular/elements": "^12.2.17",
     "@angular/forms": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
@@ -23,6 +24,9 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^12.5.3",
+    "@angular-architects/module-federation-runtime": "^12.5.3",
+    "@angular-architects/module-federation-tools": "^12.5.3",
     "@angular-devkit/build-angular": "~12.2.18",
     "@angular/cli": "~12.2.18",
     "@angular/compiler-cli": "~12.2.0",

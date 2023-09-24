@@ -7,6 +7,7 @@
   },
   "files": [
     "src/main.ts",
+    "src/app/modules/main/bootstrap.ts",
     "src/polyfills.ts"
   ],
   "include": [
