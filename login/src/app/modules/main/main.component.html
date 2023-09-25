@@ -1,2 +1,19 @@
 <h4>Login Main Component</h4>
 <p>Angular version: {{ngVersion}}</p>
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="submitHandler()">
+    <div class="row">
+      <label for="name">User</label>
+      <input type="text" name="user" id="user" formControlName="name">
+      <p *ngIf="loginForm.hasError('required', ['name']) && loginForm.get('name')?.dirty" class="error-msg">Field mandatory</p>
+    </div>
+    <div class="row">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" formControlName="password">
+      <p *ngIf="loginForm.hasError('required', ['password']) && loginForm.get('password')?.dirty" class="error-msg">Field mandatory</p>
+    </div>
+    <div class="row">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

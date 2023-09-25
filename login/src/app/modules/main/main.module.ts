@@ -1,5 +1,6 @@
 import { RouterModule } from '@angular/router';
 import { Injector, NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,11 +10,13 @@ import { MainComponent } from './main.component';
   imports: [
     BrowserModule,
     RouterModule.forChild([
-    {
-      path: '',
-      component: MainComponent
-    }
-  ])],
+      {
+        path: '',
+        component: MainComponent
+      }
+    ]),
+    ReactiveFormsModule
+  ],
   exports: [RouterModule],
   declarations: [MainComponent],
   providers: []
